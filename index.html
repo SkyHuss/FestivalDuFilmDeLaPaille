@@ -1,57 +1,175 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Festival du Film de La Paille - Un événement cinématographique unique">
-    <title>Festival du Film de La Paille</title>
+    <title>Nos Films - Festival du Film de La Paille</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Polices Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo du Festival du Film de La Paille">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#programme">Programme</a></li>
-                    <li><a href="#films">Films</a></li>
-                    <li><a href="#billetterie">Billetterie</a></li>
-                    <li><a href="#infos">Infos Pratiques</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- Le header sera injecté ici par le script -->
     </header>
 
     <main>
-        <!-- Contenu principal du site -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Nos Films</h1>
+                <p>Découvrez la sélection officielle du festival</p>
+            </div>
+        </section>
+
+        <section class="films-grid">
+            <div class="container">
+                <div class="films-container">
+                    <div class="film-card">
+                        <div class="film-poster">
+                            <img src="images/films/film1.webp" alt="L'amour ouf">
+                            <div class="film-rating">
+                                <span>★★★★☆</span>
+                            </div>
+                            <div class="film-overlay">
+                                <button class="btn-details">Voir détails</button>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <h2>L'amour ouf</h2>
+                            <div class="film-metadata">
+                                <span>2024</span>
+                                <span>•</span>
+                                <span>1h 52min</span>
+                                <span>•</span>
+                                <span>Drame</span>
+                            </div>
+                            <p class="film-director">Réalisé par Gilles Lellouche</p>
+                            <p class="film-description">Un récit bouleversant sur les affres de l'amour dans un Paris contemporain où se croisent des destins singuliers.</p>
+                        </div>
+                    </div>
+
+                    <div class="film-card">
+                        <div class="film-poster">
+                            <img src="images/films/film2.webp" alt="Les jours heureux">
+                            <div class="film-rating">
+                                <span>★★★★★</span>
+                            </div>
+                            <div class="film-overlay">
+                                <button class="btn-details">Voir détails</button>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <h2>Les jours heureux</h2>
+                            <div class="film-metadata">
+                                <span>2023</span>
+                                <span>•</span>
+                                <span>2h 10min</span>
+                                <span>•</span>
+                                <span>Comédie</span>
+                            </div>
+                            <p class="film-director">Réalisé par Léa Seydoux</p>
+                            <p class="film-description">Un été dans le sud de la France, une famille se retrouve pour les dernières vacances dans leur maison familiale avant sa vente.</p>
+                        </div>
+                    </div>
+
+                    <div class="film-card">
+                        <div class="film-poster">
+                            <img src="images/films/film3.webp" alt="Nocturne">
+                            <div class="film-rating">
+                                <span>★★★☆☆</span>
+                            </div>
+                            <div class="film-overlay">
+                                <button class="btn-details">Voir détails</button>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <h2>Nocturne</h2>
+                            <div class="film-metadata">
+                                <span>2024</span>
+                                <span>•</span>
+                                <span>1h 43min</span>
+                                <span>•</span>
+                                <span>Thriller</span>
+                            </div>
+                            <p class="film-director">Réalisé par Vincent Cassel</p>
+                            <p class="film-description">Dans les rues sombres de Marseille, un détective traque un tueur en série qui ne frappe que les nuits de pleine lune.</p>
+                        </div>
+                    </div>
+
+                    <div class="film-card">
+                        <div class="film-poster">
+                            <img src="images/films/film4.webp" alt="La dernière danse">
+                            <div class="film-rating">
+                                <span>★★★★☆</span>
+                            </div>
+                            <div class="film-overlay">
+                                <button class="btn-details">Voir détails</button>
+                            </div>
+                        </div>
+                        <div class="film-info">
+                            <h2>La dernière danse</h2>
+                            <div class="film-metadata">
+                                <span>2023</span>
+                                <span>•</span>
+                                <span>1h 35min</span>
+                                <span>•</span>
+                                <span>Drame musical</span>
+                            </div>
+                            <p class="film-director">Réalisé par Marion Cotillard</p>
+                            <p class="film-description">L'histoire émouvante d'une ancienne danseuse étoile qui tente de renouer avec sa passion malgré la maladie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal pour les détails du film -->
+        <div class="film-modal" id="film-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-body">
+                    <div class="modal-poster">
+                        <img src="" alt="" id="modal-img">
+                        <div class="modal-rating">
+                            <span id="modal-rating"></span>
+                        </div>
+                    </div>
+                    <div class="modal-details">
+                        <h2 id="modal-title"></h2>
+                        <div class="film-metadata" id="modal-metadata"></div>
+                        <div class="film-info-details">
+                            <p class="detail-item"><strong>Réalisé par :</strong> <span id="modal-director"></span></p>
+                            <p class="detail-item"><strong>Pays :</strong> <span id="modal-country">France</span></p>
+                            <p class="detail-item"><strong>Langue :</strong> <span id="modal-language">Français</span></p>
+                            <p class="detail-item"><strong>Date de sortie :</strong> <span id="modal-release">Mai 2024</span></p>
+                        </div>
+                        <div class="film-synopsis">
+                            <h3>Synopsis</h3>
+                            <p id="modal-synopsis"></p>
+                        </div>
+                        <div class="film-cast">
+                            <h3>Distribution</h3>
+                            <p id="modal-cast">Acteurs principaux du film</p>
+                        </div>
+                        <a href="#" class="btn-tickets" id="modal-tickets">Réserver des billets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Festival du Film de La Paille - Tous droits réservés</p>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+        <!-- Le footer sera injecté ici par le script -->
     </footer>
 
-    <!-- Script pour icônes (optionnel) -->
+    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/film-details.js"></script>
 </body>
-
 </html>
