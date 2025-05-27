@@ -6,15 +6,58 @@
     <meta name="description" content="Festival du Film de La Paille - Un événement cinématographique unique">
     <title>Nos Films - Festival du Film de La Paille</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Polices Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <!-- Le header sera injecté ici par le script -->
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/sheep.png" alt="Logo du Festival du Film de La Paille">
+                </a>
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <img src="/images/icons/bars-svgrepo-com.svg" alt="barSVG">
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="programme.html">Programme <img src="/images/icons/chevron-down-icon.svg" alt="chevron-down-icon"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="programme-jour1.html">Jour 1</a></li>
+                            <li><a href="programme-jour2.html">Jour 2</a></li>
+                            <li><a href="programme-jour3.html">Jour 3</a></li>
+                            <li><a href="programme-complet.html">Programme complet</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="films.html">Films <img src="/images/icons/chevron-down-icon.svg" alt="chevron-down-icon"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="competition.html">En compétition</a></li>
+                            <li><a href="hors-competition.html">Hors compétition</a></li>
+                            <li><a href="courts-metrages.html">Courts métrages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="billetterie.html">Billetterie</a></li>
+                    <li class="dropdown">
+                        <a href="infos.html">Infos Pratiques <img src="/images/icons/chevron-down-icon.svg" alt="chevron-down-icon"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="lieux.html">Lieux</a></li>
+                            <li><a href="acces.html">Accès</a></li>
+                            <li><a href="hebergement.html">Hébergement</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -167,7 +210,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="js/components/header.js"></script>
     <script src="js/components/footer.js"></script>
     <script src="js/components/film-details.js"></script>

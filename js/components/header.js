@@ -17,3 +17,16 @@
 //             });
 //         });
 // });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const mobileToggle = document.getElementById('mobile-toggle');
+//     const nav = document.getElementById('main-nav');
+    
+//     // Toggle du menu mobile
+//     if (mobileToggle) {
+//         mobileToggle.addEventListener('click', function() {
+//             console.log("coucou");
+//             nav.classList.toggle('active');
+//         });
+//     }
+// });

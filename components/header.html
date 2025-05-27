@@ -4,13 +4,82 @@
             <img src="images/sheep.png" alt="Logo du Festival du Film de La Paille">
         </a>
     </div>
-    <nav>
+    <button class="mobile-toggle" id="mobile-toggle">
+        X
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav id="main-nav">
         <ul>
-            <li><a href="programme.html">Programme</a></li>
-            <li><a href="films.html">Films</a></li>
+            <li class="dropdown">
+                <a href="programme.html">Programme <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="programme-jour1.html">Jour 1</a></li>
+                    <li><a href="programme-jour2.html">Jour 2</a></li>
+                    <li><a href="programme-jour3.html">Jour 3</a></li>
+                    <li><a href="programme-complet.html">Programme complet</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="films.html">Films <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="competition.html">En compétition</a></li>
+                    <li><a href="hors-competition.html">Hors compétition</a></li>
+                    <li><a href="courts-metrages.html">Courts métrages</a></li>
+                </ul>
+            </li>
             <li><a href="billetterie.html">Billetterie</a></li>
-            <li><a href="infos.html">Infos Pratiques</a></li>
+            <li class="dropdown">
+                <a href="infos.html">Infos Pratiques <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="lieux.html">Lieux</a></li>
+                    <li><a href="acces.html">Accès</a></li>
+                    <li><a href="hebergement.html">Hébergement</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </div>
+
+<!-- Script pour gérer le menu mobile -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const nav = document.getElementById('main-nav');
+        
+        // Toggle du menu mobile
+        if (mobileToggle) {
+            mobileToggle.addEventListener('click', function() {
+                console.log("coucou");
+                nav.classList.toggle('active');
+            });
+        }
+        
+        // Gestion des dropdowns sur mobile
+        const dropdowns = document.querySelectorAll('.dropdown'); // Correction ici
+        
+        if (window.innerWidth <= 768) {
+            dropdowns.forEach(dropdown => {
+                const link = dropdown.querySelector('a');
+                if (link) {
+                    link.addEventListener('click', function(e) {
+                        const isMobile = window.innerWidth <= 768;
+                        
+                        if (isMobile) {
+                            e.preventDefault();
+                            dropdown.classList.toggle('active');
+                            
+                            // Fermer les autres dropdowns
+                            dropdowns.forEach(otherDropdown => {
+                                if (otherDropdown !== dropdown && otherDropdown.classList.contains('active')) {
+                                    otherDropdown.classList.remove('active');
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+        }
+    });
+</script>
